@@ -4,11 +4,129 @@
     padding: 0;
     
 }
+body{
+    width: 100%;
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.hamicon {
+    position: sticky;
+    right:10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-right: 20px;
+}
+.hammenu{
+    display: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    
+}
+
+.hamlinks{
+    margin: 20px;
+    padding: 30px;
+}
+.hamlinks a{
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+    color: white;
+}
+
+i{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.herotxt{
+    width:75%;
+    color: white;
+    margin: 50px;
+    text-align: center;
+}
+
+.herotxt h1{
+    font-family: 'Bellefair', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 24px;
+}
+
+.herotxt p:first-child {
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 28px;
+}
+
+.herotxt p:last-child {
+    font-family: 'barlow', sans-serif;
+    font-size: 20px;
+}
+
+.btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn button{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border:none;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    color: black;
+    font-family: 'bellefair', serif;
+    font-size: 24px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) 
+{
+    
 
 body{
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     background-image: url(/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -28,12 +146,11 @@ img{
     margin-top: 20px;
     margin-right: 48px;
     backdrop-filter: blur(20px);
-}
-.nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .navlinks{
     height: 100%;
@@ -45,8 +162,6 @@ img{
     border-bottom: 2px solid white;
 }
 
-
-
 a {
     display: inline-block;
     text-decoration: none;
@@ -55,3 +170,83 @@ a {
     font-size: 20px;
     font-family: 'barlow condensed', sans-serif;
 }
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 50%;
+    margin: 50px 0 0 0 ;
+    padding: 50px;
+}
+
+.hammenu{
+    display: none;
+}
+
+.hamicon{
+    font-size: 36px;
+    background-color: transparent;
+    border:none;
+    color: white;
+    display: none;
+
+}
+
+.herotxt{
+    width:50%;
+    color: white;
+    padding-left: 20px;
+}
+
+.herotxt p:first-child {
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 28px;
+}
+
+.herotxt p:last-child {
+    font-family: 'barlow', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.herotxt h1 {
+    font-family: 'bellefair', sans-serif;
+    font-size: 144px;
+    font-weight: 100;
+}
+
+.btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn button{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border:none;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    color: black;
+    font-family: 'bellefair', serif;
+    font-size: 24px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn button:hover{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    font-size: 32px;
+    transition: ease-in-out 0.5s all;
+    
+}
+    
+    }
+

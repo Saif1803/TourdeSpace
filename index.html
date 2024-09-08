@@ -4,17 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Tour de Space</title>
   </head>
   <body>
+    <!--navigation bar-->
     <header>
       <div><img src="/assets/shared/logo.svg" alt="logo" /></div>
-      <div class="nav-menu">
+      <div class="nav-menu hidden">
         <div class="navlinks"><a>00 HOME</a></div>
         <div class="navlinks"><a>01 DESTINATIONS</a></div>
         <div class="navlinks"><a>02 CREW</a></div>
         <div class="navlinks"><a>03 VESSELS</a></div>
       </div>
+      <button class="hamicon" onclick="hamToggle()">
+        <i class="fa-solid fa-solid fa-bars"></i>
+      </button>
+      <div class="hammenu hidden">
+        <div class="hamlinks"><a>00 HOME</a></div>
+        <div class="hamlinks"><a>01 DESTINATIONS</a></div>
+        <div class="hamlinks"><a>02 CREW</a></div>
+        <div class="hamlinks"><a>03 VESSELS</a></div>
+      </div>
     </header>
+    <!--navigation bar-->
+
+    <!--hero-->
+    <main>
+      <div class="herotxt">
+        <p>SO, YOU WANT TO TRAVEL TO</p>
+        <h1>SPACE</h1>
+        <p>
+          Let's face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we'll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div class="btn"><button>EXPLORE</button></div>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
