@@ -1,4 +1,6 @@
-# TourdeSpace(for TECH-E Web Dev Cluster)
+# TourdeSpace
+
+This project is for TECH-E Web Dev Cluster Recruitment.
 
 Developing the design done by [kevin powell](https://www.youtube.com/@KevinPowell)
 
