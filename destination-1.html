@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Destinations</title>
+  </head>
+  <body>
+    <!--navigation bar-->
+    <header>
+      <div><img src="/assets/shared/logo.svg" alt="logo" /></div>
+      <div class="nav-menu hidden">
+        <div class="navlinks"><a>00 HOME</a></div>
+        <div class="navlinks"><a>01 DESTINATIONS</a></div>
+        <div class="navlinks"><a>02 CREW</a></div>
+        <div class="navlinks"><a>03 VESSELS</a></div>
+      </div>
+      <button class="hamicon" onclick="hamToggle()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="hammenu hidden">
+        <div class="hamlinks"><a>00 HOME</a></div>
+        <div class="hamlinks"><a>01 DESTINATIONS</a></div>
+        <div class="hamlinks"><a>02 CREW</a></div>
+        <div class="hamlinks"><a>03 VESSELS</a></div>
+      </div>
+    </header>
+    <!--navigation bar-->
+
+    <!--hero-->
+    <main>
+      <p><span>01</span>PICK YOUR DESTINATION</p>
+      <img src="/assets/destination/image-moon.png" alt="" />
+      <div class="dest-tab">
+        <div id="destination" class="des-name active des1">
+          <button onclick="switchDestination(this)">MOON</button>
+        </div>
+        <div id="destination" class="des-name des2">
+          <button onclick="switchDestination(this)">MARS</button>
+        </div>
+        <div id="destination" class="des-name des3">
+          <button onclick="switchDestination(this)">EUROPA</button>
+        </div>
+        <div id="destination" class="des-name des4">
+          <button onclick="switchDestination(this)">TITAN</button>
+        </div>
+      </div>
+      <div class="info">
+        <h1>MOON</h1>
+        <p>
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+      </div>
+      <div class="t-details">
+        <p>AVG. DISTANCE</p>
+        <h1>384,400 KM</h1>
+        <p>Est. travel time</p>
+        <h2>3 DAYS</h2>
+      </div>
+    </main>
+    <script src="index1.js"></script>
+  </body>
+</html>
