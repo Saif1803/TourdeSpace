@@ -87,7 +87,7 @@ main p span {
 main img {
     width: 220px;
     height: 220px;
-    /* padding: 0 50px 0 50px; */
+    padding: 0 50px 0 50px;
     margin: 25px;
     animation: rotate 30s linear infinite;
 }
