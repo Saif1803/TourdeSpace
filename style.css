@@ -51,6 +51,7 @@ header{
 }
 .hamlinks a{
     font-family: 'barlow condensed', sans-serif;
+    text-decoration: none;
     font-size: 32px;
     margin-top: 20px;
     color: white;
@@ -190,6 +191,7 @@ main{
         display: none;
     
     }
+
     
     .herotxt{
         width:70%;
