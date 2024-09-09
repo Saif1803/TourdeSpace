@@ -75,12 +75,6 @@ main {
     margin: 20px;
 }
 
-main p:first-child {
-    font-family: 'barlow condensed', sans-serif;
-    font-size: 24px;
-    margin: 10px;
-}
-
 main p span {
     font-family: 'barlow condensed', sans-serif;
     font-size: 24px;
@@ -241,26 +235,106 @@ main img {
         display: none;
     
     }
+
+    main {
+
+        color: white;
+        display: flex;
+        flex-direction: column; 
+        margin: 20px;
+    }
+    
+    
+    
+    main p span {
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 24px;
+        color: #979797;
+        margin: 0 10px 0 10px;
+    }
+    
+    main img {
+        width: 220px;
+        height: 220px;
+        padding: 0 50px 0 50px;
+        margin: 25px;
+    }
+    
+    .dest-tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    
+    
+    .des-name button {
+        margin: 0 10px 0 10px;
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 24px;
+        padding: 10px;
+        color: #D0D6F9;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .active{
+        border-bottom: 2px solid white;
+        color: white;
+    }
+    
+    .info h1 {
+        text-align: center;
+        font-family: 'bellefair', sans-serif;
+        font-size: 64px;
+        font-weight: 100;
+        margin: 10px;
+    }
+    
+    .info p {
+        font-family: 'barlow', sans-serif;
+        font-size: 20px;
+        margin:10px 10px 15px 10px;
+        text-align: center;
+        color: #D0D6F9;
+    }
+    
+    .t-details{
+        width: 100%;
+        border-top: 1px solid #D0D6F9;
+        text-align: center;
+    }
+    
+    .t-details p:first-child{
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 24px;
+        color: #D0D6F9;
+        margin: 10px;
+    }
+    
+    .t-details h1 {
+        font-family: 'bellefair', sans-serif;
+        font-size: 32px;
+        margin: 10px;
+    }
+    
+    .t-details p:nth-child(3){
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 24px;
+        color: #D0D6F9;
+        margin: 10px;
+    }
+    
+    .t-details h2 {
+        font-family: 'bellefair', sans-serif;
+        font-size: 32px;
+        margin: 10px;
+    }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 1024px) 
@@ -331,4 +405,25 @@ img{
 
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+main img {
+    width: 480px;
+    height: 480px;
+    margin-right:50px;
+
+}
+
+.hero-2 {
+    width: 30%;
+}
+
+
+
+
+}
+

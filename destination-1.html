@@ -13,10 +13,16 @@
   <body>
     <!--navigation bar-->
     <header>
-      <div><img src="/assets/shared/logo.svg" alt="logo" /></div>
+      <div>
+        <a href="index.html"
+          ><img src="/assets/shared/logo.svg" alt="logo"
+        /></a>
+      </div>
       <div class="nav-menu hidden">
-        <div class="navlinks"><a>00 HOME</a></div>
-        <div class="navlinks"><a>01 DESTINATIONS</a></div>
+        <div class="navlinks"><a href="index.html">00 HOME</a></div>
+        <div class="navlinks">
+          <a href="destination-1.html">01 DESTINATIONS</a>
+        </div>
         <div class="navlinks"><a>02 CREW</a></div>
         <div class="navlinks"><a>03 VESSELS</a></div>
       </div>
@@ -34,40 +40,41 @@
 
     <!--hero-->
     <main>
-      <p>PICK YOUR DESTINATION</p>
       <img
         id="destinationImage"
         src="./assets/destination/image-moon.png"
         alt="Moon"
       />
-      <div class="dest-tab">
-        <div class="des-name active des1">
-          <button onclick="switchDestination(0)">MOON</button>
+      <div class="hero-2">
+        <div class="dest-tab">
+          <div class="des-name active des1">
+            <button onclick="switchDestination(0)">MOON</button>
+          </div>
+          <div class="des-name des2">
+            <button onclick="switchDestination(1)">MARS</button>
+          </div>
+          <div class="des-name des3">
+            <button onclick="switchDestination(2)">EUROPA</button>
+          </div>
+          <div class="des-name des4">
+            <button onclick="switchDestination(3)">TITAN</button>
+          </div>
         </div>
-        <div class="des-name des2">
-          <button onclick="switchDestination(1)">MARS</button>
+        <div class="info">
+          <h1 class="destinationName">MOON</h1>
+          <p id="destinationDescription">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
         </div>
-        <div class="des-name des3">
-          <button onclick="switchDestination(2)">EUROPA</button>
+        <div class="t-details">
+          <p>AVG. DISTANCE</p>
+          <h1 id="destinationDistance">384,400 KM</h1>
+          <p>Est. travel time</p>
+          <h2 id="destinationTravel">3 DAYS</h2>
         </div>
-        <div class="des-name des4">
-          <button onclick="switchDestination(3)">TITAN</button>
-        </div>
-      </div>
-      <div class="info">
-        <h1 class="destinationName">MOON</h1>
-        <p id="destinationDescription">
-          See our planet as you’ve never seen it before. A perfect relaxing trip
-          away to help regain perspective and come back refreshed. While you’re
-          there, take in some history by visiting the Luna 2 and Apollo 11
-          landing sites.
-        </p>
-      </div>
-      <div class="t-details">
-        <p>AVG. DISTANCE</p>
-        <h1 id="destinationDistance">384,400 KM</h1>
-        <p>Est. travel time</p>
-        <h2 id="destinationTravel">3 DAYS</h2>
       </div>
     </main>
     <script src="index1.js"></script>

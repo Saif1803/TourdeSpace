@@ -1,4 +1,4 @@
-
+// function for hamburger menu working
 function hamToggle() {
     let menu = document.querySelector('.hammenu');
     let icon = document.getElementsByTagName('i')[0];
@@ -19,8 +19,7 @@ fetch('data.json')
         return response.json();
     })
     .then(data => {
-        destinations = data.destinations; // Store the destinations data
-        // Display the first destination by default
+        destinations = data.destinations;
         displayDestination(0);
     })
     .catch(error => {
@@ -29,16 +28,13 @@ fetch('data.json')
 
 // Function to switch destination
 function switchDestination(index) {
-    // Remove active class from all buttons
     const buttons = document.querySelectorAll('.des-name');
     buttons.forEach(button => {
         button.classList.remove('active');
     });
 
-    // Add active class to the clicked button
     buttons[index].classList.add('active');
 
-    // Display the selected destination details
     displayDestination(index);
 }
 
