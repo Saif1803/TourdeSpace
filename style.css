@@ -36,12 +36,13 @@ header{
     margin-left: 10px;
 }
 .hammenu{
-    display: absolute;
+    
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
     backdrop-filter: blur(20px);
     border-radius: 20px;
+    z-index: 999;
     
 }
 
