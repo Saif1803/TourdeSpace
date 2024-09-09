@@ -126,7 +126,7 @@ main p:nth-child(3){
 
 }
 
-.active{
+.tab .active{
     background-color: white;
 }
 
