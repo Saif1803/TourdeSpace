@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="crew.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Tour de Space</title>
+    <title>Crew</title>
   </head>
   <body>
     <!--navigation bar-->
@@ -23,7 +23,7 @@
         <div class="navlinks">
           <a href="destination-1.html">01 DESTINATIONS</a>
         </div>
-        <div class="navlinks"><a href="crew.html">02 CREW</a></div>
+        <div class="navlinks"><a>02 CREW</a></div>
         <div class="navlinks"><a>03 VESSELS</a></div>
       </div>
       <button class="hamicon" onclick="hamToggle()">
@@ -40,20 +40,27 @@
 
     <!--hero-->
     <main>
-      <div class="herotxt">
-        <p>SO, YOU WANT TO TRAVEL TO</p>
-        <h1>SPACE</h1>
-        <p>
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
+      <div class="info">
+        <p id="role">COMMANDER</p>
+        <h1 id="name">DOUGLAS HURLEY</h1>
+        <p id="about">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
         </p>
+        <div class="switchtab">
+          <div class="tab">
+            <button class="tablinks active" onclick="switchCrew(0)"></button>
+            <button class="tablinks" onclick="switchCrew(1)"></button>
+            <button class="tablinks" onclick="switchCrew(2)"></button>
+          </div>
+        </div>
       </div>
-      <div class="btn">
-        <a href="destination-1.html"><button>EXPLORE</button></a>
+      <div class="crew-img">
+        <img id="crewImage" src="/assets/crew/image-douglas-hurley.png" />
       </div>
     </main>
-    <script src="index.js"></script>
+
+    <script src="crew.js"></script>
   </body>
 </html>
