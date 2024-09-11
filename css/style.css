@@ -114,6 +114,7 @@ main{
     font-family: 'bellefair', serif;
     font-size: 24px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) 
