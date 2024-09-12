@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;1,100&family=Barlow:wght@100;400&family=Bellefair&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100%;
+    height:100%;
+    background-image: url(/assets/tech/background-technology-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.hamicon {
+    position: sticky;
+    right:10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.hammenu{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    z-index: 999;
+    
+}
+
+.hamlinks{
+    margin: 20px;
+    padding: 30px;
+}
+.hamlinks a{
+    font-family: 'barlow condensed', sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    margin-top: 20px;
+    color: white;
+}
+
+i{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tech-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.tech-img img{
+    width: 320px;
+    height: 320px;
+    border-radius: 30px;
+
+}
+
+.tech-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .tech-text p{
+    font-family: 'bellefair', sans-serif;
+    font-size: 24px;
+    color: #D0D6F9;
+    margin-top: 20px;
+}
+
+.tech-text h1{
+    font-family: 'bellefair',sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 32px;
+    margin-top: 16px;
+}
+
+.tech-text p:nth-child(4){
+   margin: 20px;
+   text-align: center;
+}
+
+.tech-nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+ button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: white solid 2px;
+    color:white;
+    font-family: 'bellefair',sans-serif;
+    font-size: 32px; 
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    body {
+        background-image: url(/assets/tech/background-technology-tablet.jpg);
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url(/assets/tech/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .nav-menu{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .navlinks{
+        height: 100%;
+        margin: 0 10px 0 10px;
+        padding: 20px;
+    }
+    
+    .navlinks:hover{
+        border-bottom: 2px solid white;
+    }
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        font-family: 'barlow condensed', sans-serif;
+    }
+
+    .hammenu{
+        display: none;
+    }
+    
+    .hamicon{
+        font-size: 36px;
+        background-color: transparent;
+        border:none;
+        color: white;
+        display: none;
+    
+    }
+
+    .tech-img img{
+        width: 450px;
+        height: 450px;
+    }
+    .tech-text p{
+        font-size: 32px;
+    }
+    .tech-text h1{
+        font-size: 48px;
+    }
+    .tech-text p:nth-child(4){
+        font-size: 24px;
+    }
+    .tech-nav button{
+        width: 56px;
+        height: 56px;
+        font-size: 48px;
+    }
+   
+    .tech-nav{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) 
+{
+    
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/tech/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    margin-top: 20px;
+    margin-right: 48px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navlinks{
+    height: 100%;
+    margin: 0 10px 0 10px;
+    padding: 20px;
+}
+
+.navlinks:hover{
+    border-bottom: 2px solid white;
+}
+
+.navlinks a {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: 'barlow condensed', sans-serif;
+}
+
+.hammenu{
+    display: none;
+}
+
+.hamicon{
+    font-size: 36px;
+    background-color: transparent;
+    border:none;
+    color: white;
+    display: none;
+
+}
+
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.tech-text{
+    width: 50%;
+}
+}

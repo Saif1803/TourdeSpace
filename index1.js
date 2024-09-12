@@ -43,7 +43,7 @@ function displayDestination(index) {
     const destination = destinations[index];
     document.getElementById('destinationImage').src = destination.images.png;
     document.getElementById('destinationImage').alt = destination.name;
-    document.querySelector('.destinationName').textContent = destination.name;
+    document.getElementById('destinationName').textContent = destination.name;
     document.getElementById('destinationDescription').textContent = destination.description;
     document.getElementById('destinationDistance').textContent = destination.distance;
     document.getElementById('destinationTravel').textContent = destination.travel;

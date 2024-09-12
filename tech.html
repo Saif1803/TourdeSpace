@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/tech.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Tour de Space</title>
+    <title>TECH</title>
   </head>
   <body>
     <!--navigation bar-->
@@ -40,22 +40,35 @@
     </header>
     <!--navigation bar-->
 
-    <!--hero-->
+    <!--Hero-->
+
     <main>
-      <div class="herotxt">
-        <p>SO, YOU WANT TO TRAVEL TO</p>
-        <h1>SPACE</h1>
-        <p>
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
-        </p>
-      </div>
-      <div class="btn">
-        <a href="destinations.html"><button>EXPLORE</button></a>
+      <div class="hero">
+        <div class="tech-img">
+          <img
+            id="techImage"
+            src="/assets/tech/image-launch-vehicle-portrait.jpg"
+          />
+        </div>
+        <div class="tech-text">
+          <div class="tech-nav">
+            <button class="tech-btn active" onclick="switchTech(0)">1</button>
+            <button class="tech-btn" onclick="switchTech(1)">2</button>
+            <button class="tech-btn" onclick="switchTech(2)">3</button>
+          </div>
+          <p>THE TERMINOLOGY</p>
+          <h1 id="name">LAUNCH VEHICLE</h1>
+          <p id="about">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </div>
       </div>
     </main>
-    <script src="index.js"></script>
+
+    <script src="tech.js"></script>
   </body>
 </html>
