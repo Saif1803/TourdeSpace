@@ -48,12 +48,6 @@ function displayCrew(index) {
 
 
     //due to size difference in the images
-    if(index==1){
-        document.getElementById('crewImage').style.width = "380px";
-    }
-    
-    if(index==2){
-        document.getElementById('crewImage').style.width = "480px";
-    }
+
 }
 
