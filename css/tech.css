@@ -10,6 +10,7 @@ body{
     background-image: url(/assets/tech/background-technology-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
