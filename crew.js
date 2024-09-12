@@ -43,6 +43,17 @@ function displayCrew(index) {
     document.getElementById('crewImage').src = crew.images.png;
     document.getElementById('role').textContent = crew.role; 
     document.getElementById('name').textContent = crew.name; 
-    document.getElementById('about').textContent = crew.about; 
+    document.getElementById('about').textContent = crew.about;
+
+
+
+    //due to size difference in the images
+    if(index==1){
+        document.getElementById('crewImage').style.width = "380px";
+    }
+    
+    if(index==2){
+        document.getElementById('crewImage').style.width = "480px";
+    }
 }
 

@@ -132,6 +132,7 @@ main p:nth-child(3){
 
 
 
+
 @media screen and (min-width: 768px) 
 {
 
@@ -253,7 +254,7 @@ header{
     align-items: center;
 }
 
-img{
+header img{
     margin-top: 20px;
     margin-left: 64px;
     padding: 10px;
@@ -325,6 +326,19 @@ main{
     width:415px;
     height: 580px;
     padding: 20px;
+    animation: load 1s  ease-in-out;
 }
 
+}
+
+
+@keyframes load {
+
+    from {
+        filter: blur(20px);
+    }
+    
+    to {
+        filter: blur(0px);
+    }
 }
