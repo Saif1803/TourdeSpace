@@ -20,7 +20,11 @@ header{
     height: 80px;
     padding: 10px 20px;
 }
-
+ header img{
+    margin-top: 20px;
+    margin-left: 64px;
+    padding: 10px;
+}
 
 .hidden{
     display: none;
@@ -88,6 +92,7 @@ main{
     width: 320px;
     height: 320px;
     border-radius: 30px;
+    animation: zoomOut 1s ease-in-out;
     
 
 }
@@ -124,6 +129,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    animation: tabReveal 1s ease-in-out;
 }
 
  button {
@@ -267,6 +273,10 @@ header{
     padding: 20px;
 }
 
+.navlinks:nth-child(4){
+    border-bottom: 2px solid #979797;
+}
+
 .navlinks:hover{
     border-bottom: 2px solid white;
 }
@@ -304,4 +314,28 @@ header{
 .tech-text{
     width: 50%;
 }
+}
+
+
+@keyframes tabReveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes zoomOut {
+
+    from {
+        transform: scale(1.5 );
+        filter: blur(20px);
+    }
+    to {
+        transform: scale(1);
+        filter: blur(0px);
+    }
+    
 }

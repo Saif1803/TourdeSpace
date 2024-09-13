@@ -44,10 +44,6 @@ function displayCrew(index) {
     document.getElementById('role').textContent = crew.role; 
     document.getElementById('name').textContent = crew.name; 
     document.getElementById('about').textContent = crew.about;
-
-
-
-    //due to size difference in the images
-
+    
 }
 
