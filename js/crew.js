@@ -10,7 +10,7 @@ function hamToggle() {
 let crews = [];
 
 // Fetch the JSON data
-fetch('crew.json')
+fetch('js/crew.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');

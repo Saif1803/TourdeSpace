@@ -11,7 +11,7 @@ function hamToggle() {
 let destinations = [];
 
 // Fetch the JSON data
-fetch('data.json')
+fetch('js/data.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
