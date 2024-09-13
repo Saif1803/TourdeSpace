@@ -20,11 +20,7 @@ header{
     height: 80px;
     padding: 10px 20px;
 }
- header img{
-    margin-top: 20px;
-    margin-left: 64px;
-    padding: 10px;
-}
+
 
 .hidden{
     display: none;
@@ -141,6 +137,7 @@ main{
     color:white;
     font-family: 'bellefair',sans-serif;
     font-size: 32px; 
+    cursor: pointer;
 }
 
 .active {
@@ -170,6 +167,11 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    header img{
+        margin-top: 20px;
+        margin-left: 64px;
+        padding: 10px;
     }
 
 
