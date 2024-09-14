@@ -6,4 +6,4 @@ This project is for TECH-E Web Dev Cluster Recruitment.
 ## Tech Stack
 - HTML
 - CSS
-- javaScript
+- JavaScript
